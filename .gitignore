@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/src/JobGateway/.vs/JobGateway/v16
+/src/src/JobGateway/JobGateway.Lambda/obj
+/src/JobGateway/.vs/JobGateway
+/src/JobGateway/JobGateway.Lambda/bin/Debug/netcoreapp3.1
+/src/JobGateway/JobGateway.Lambda/obj
+/src/JobGateway/JobGateway.Lambda.Tests/bin/Debug/netcoreapp3.1
+/src/JobGateway/JobGateway.Lambda.Tests/obj

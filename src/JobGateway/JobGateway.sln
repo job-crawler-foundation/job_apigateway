@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobGateway.Lambda", "JobGateway.Lambda\JobGateway.Lambda.csproj", "{8D62B1DB-7B83-4156-846C-ADA3902486B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobGateway.Tests", "JobGateway.Lambda.Tests\JobGateway.Tests.csproj", "{5C4E0895-7165-4630-8AC5-24E1D43B3552}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D62B1DB-7B83-4156-846C-ADA3902486B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D62B1DB-7B83-4156-846C-ADA3902486B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D62B1DB-7B83-4156-846C-ADA3902486B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D62B1DB-7B83-4156-846C-ADA3902486B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4E0895-7165-4630-8AC5-24E1D43B3552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4E0895-7165-4630-8AC5-24E1D43B3552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4E0895-7165-4630-8AC5-24E1D43B3552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4E0895-7165-4630-8AC5-24E1D43B3552}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FF07C22-C4BC-4B0D-BA7C-E2B90996B752}
+	EndGlobalSection
+EndGlobal
