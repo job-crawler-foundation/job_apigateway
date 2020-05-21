@@ -1,0 +1,25 @@
+name: Job Gateway Lambda Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy-lambda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.100'
+      - run: dotnet publish src/JobGateway/JobGateway.Lambda -o lambdaPackage
+      - run: ls lambdaPackage
+      - run: zip -j lambda.zip lambdaPackage/*
+      - uses: appleboy/lambda-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_SECRET_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_region: ${{ secrets.AWS_REGION }}
+          function_name: jobsFunction
+          zip_file: lambda.zip
